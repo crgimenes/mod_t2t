@@ -1,0 +1,14 @@
+LoadModule t2t_module         /usr/lib/apache/1.3/mod_t2t.so
+AddModule mod_t2t.c
+
+# Para converter qualquer arquivo .t2t
+<Files ~ ".*\.t2t">
+    SetHandler t2t
+</Files>
+
+
+# Para converter qualquer arquivo dentro do diretorio /arquivos
+#<Location /arquivos>
+#    SetHandler t2t
+#</Location>
+
